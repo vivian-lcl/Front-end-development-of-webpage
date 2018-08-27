@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*属性用中括号来表示*/
+        a[title] {
+            color:red;
+        }
+
+        /*匹配所有的以“LCL”开头的属性*/
+        div[class^=LCL] {
+            color: blue;
+        }
+        
+        /*以A结尾*/
+        div[class$=A] {
+            color: black;
+        }
+
+        /*包含B的所有*/
+        div[class*=B] {
+            color:purple;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com" title="百度一下">百度</a>
+    <a href="http://www.taobao.com">淘宝</a>
+    <input type="text" value="输入用户名"/>
+    <input type="submit" value="输入密码"/>
+    <div class="LC_B_L_">属性选择器</div>
+    <div class="LCL_A">属性选择器</div>
+    <div class="LCL_">属性选择器</div>
+    <div class="1_LCL_">属性选择器</div>
+</body>
+</html>
